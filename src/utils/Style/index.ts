@@ -1,29 +1,42 @@
 const mainColor = {
-  primary: '#FFC700',
-  secondary: '#1ABC9C',
-  grey: '#8D92A3',
-  white: '#F9FAFF',
-  black: '#020202',
-  red: '#D9435E',
+  primary: '#1DA043',
+  secondary: '#93CF18',
+  grey: '#939393',
+  grey2: '#F6F7F9',
+  white: '#FFFFFF',
+  black: '#030303',
+  red: '#FB2E2E',
 };
 
 export const colors = {
   primary: mainColor.primary,
   secondary: mainColor.secondary,
-  red: mainColor.red,
   grey: mainColor.grey,
+  red: mainColor.red,
   white: mainColor.white,
   black: mainColor.black,
+
   text: {
     primary: mainColor.black,
     subtitel: mainColor.grey,
     white: mainColor.white,
-    toska: mainColor.secondary,
+    green: mainColor.secondary,
+    green2: mainColor.primary,
   },
-};
-
-export const fonts = {
-  medium: 'Poppins-Medium',
-  regular: 'Poppins-Regular',
-  light: 'Poppins-Light',
+  landingBackground: mainColor.grey2,
+  border: mainColor.grey,
+  button: {
+    primary: {
+      background: mainColor.primary,
+      text: mainColor.white,
+    },
+    secondary: {
+      background: 'white',
+      text: mainColor.black,
+    },
+    disable: {
+      background: mainColor.grey,
+      text: mainColor.white,
+    },
+  },
 };
