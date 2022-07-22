@@ -1,21 +1,21 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import NavigationRoot from '@nav/index';
-import {Provider, useSelector} from 'react-redux';
+import { Provider, useSelector } from 'react-redux';
 import store from '@redux/store';
-import {GlobalState} from '@redux/staterReducer/global';
+import { GlobalState } from '@redux/staterReducer/global';
 
 import FlashMessage from 'react-native-flash-message';
 
-import {Loading} from '@component/index';
+import { Loading } from '@component/index';
 
 interface AppState {
   globalReducer: GlobalState;
 }
 
 const MainApp = () => {
-  const {isLoading} = useSelector((state: AppState) => state.globalReducer);
+  const { isLoading } = useSelector((state: AppState) => state.globalReducer);
 
   return (
     <View style={styles.page}>

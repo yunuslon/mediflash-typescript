@@ -1,14 +1,17 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import {heightPercentageToDP as hp, widthPercentageToDP as wp} from 'react-native-responsive-screen';
+import {
+  heightPercentageToDP as hp,
+  widthPercentageToDP as wp,
+} from 'react-native-responsive-screen';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {colors, fonts} from '@utils/index';
-import {BarIndicator} from 'react-native-indicators';
+// import {colors, fonts} from '@utils/index';
+// import {BarIndicator} from 'react-native-indicators';
 const Loading: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.wrapper}>
-        <BarIndicator color={colors.primary} size={wp(10)} count={3} />
+        {/* <BarIndicator color={colors.primary} size={wp(10)} count={3} /> */}
       </View>
     </SafeAreaView>
   );
@@ -33,9 +36,9 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 18,
-    fontFamily: fonts.medium,
+    // fontFamily: fonts.medium,
     marginBottom: wp(2),
-    color: colors.text.primary,
+    // color: colors.text.primary,
     textAlign: 'center',
   },
 });
